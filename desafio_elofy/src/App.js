@@ -1,11 +1,11 @@
 import './App.css';
-import Table from './pages/table';
+import TablePage from './pages/tablePage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Table />
+        <TablePage />
       </header>
     </div>
   );
