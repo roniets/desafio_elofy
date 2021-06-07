@@ -1,5 +1,5 @@
-import './App.css';
 import TablePage from './pages/tablePage';
+import './App.css';
 
 function App() {
   return (

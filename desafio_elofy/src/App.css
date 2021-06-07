@@ -1,8 +1,21 @@
-.App {
-  text-align: center;
+.container-table {
+    width: 1080px;
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+    margin-top: 4px;
+}
+
+h5 {
+    margin: auto;
+    margin-right: 10px;
+}
+
+label {
+    margin: auto 20px auto 5px;
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import Reading from '../component/reading'
+import Reading from '../component/reading/reading'
 
 const TablePage = () => {
 
     return (
-        <div>
+        <div className='container-table'>
             <Reading />
         </div>
     )

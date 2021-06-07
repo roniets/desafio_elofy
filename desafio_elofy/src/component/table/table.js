@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Random(min, max) {
     min = Math.ceil(min);
@@ -11,10 +12,11 @@ const TableGrid = ({ csv }) => {
     if (!csv) {
         return null
     }
-
+    console.log('Biba')
     return (
+
         <div>
-            <Table responsive="sm">
+            <Table responsive striped bordered hover>
                 <thead>
                     <tr>
                         {csv.header.map((headerItem) => (
@@ -26,13 +28,14 @@ const TableGrid = ({ csv }) => {
                     {csv.data.map((rowItem, index) => (
                         <tr key={index}>
                             {rowItem.map((colItem) => (
-                                <td key={colItem + Random(1, 1000)}> { colItem }</td>
-                    ))}
+                                <td key={colItem + Random(1, 1000)}> {colItem}</td>
+                            ))}
                         </tr>
                     ))}
                 </tbody>
             </Table>
         </div >
+
     )
 
 }

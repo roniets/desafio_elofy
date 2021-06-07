@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import TableGrid from './table'
+import React, { useState, useEffect } from 'react'
+import Filters from '../filters/filters'
+import TableGrid from '../table/table'
 
 const parseCSV = (text) => {
     const result = {
@@ -10,6 +11,7 @@ const parseCSV = (text) => {
 
     result.header = header.split(';')
     result.header.pop()
+
     content.filter(item => item).forEach((item) => {
         result.data.push(item.split(';'))
     })
@@ -22,7 +24,16 @@ const parseCSV = (text) => {
 
 export default function Reading() {
 
-    const[csv, setCsv] = useState(null)
+    const [csv, setCsv] = useState(null)
+
+    function arrayFiltering (value) {
+        const result = csv.data.filter(value => {
+            console.log(value["4"])
+            return parseFloat(value["4"]) <= 69
+        })
+        setCsv({header: csv.header, data: result})
+        console.log(result)
+    }
 
     useEffect(() => {
         fetch('./arquivo_lanches.csv')
@@ -34,7 +45,9 @@ export default function Reading() {
 
     return (
         <div>
-            <TableGrid csv={csv}/>
+            <Filters updateData={arrayFiltering} csv={csv} />
+            <br />
+            <TableGrid csv={csv} />
         </div>
     )
 }
