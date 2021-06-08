@@ -9,10 +9,11 @@ function Random(min, max) {
 }
 
 const TableGrid = ({ csv }) => {
+    
     if (!csv) {
         return null
     }
-    console.log('Biba')
+
     return (
 
         <div>
