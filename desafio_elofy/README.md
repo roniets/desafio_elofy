@@ -18,11 +18,11 @@ Projeto de desafio para dev front end junior da Elofy, compondo uma aplicação 
 
 ## Índice
 
-* [Sobre](#-sobre)
-* [Requisitos](#-requisitos)
-* [Como Baixar e Iniciar](#-como-baixar-e-iniciar)
-* [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-* [Autor](#-autor)
+* [Sobre](#sobre)
+* [Requisitos](#requisitos)
+* [Como Baixar e Iniciar](#como-baixar-e-iniciar)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Autor](#autor)
 
 ---
 
