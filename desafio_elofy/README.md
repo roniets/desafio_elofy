@@ -38,16 +38,16 @@ Projeto de desafio para dev front end junior da Elofy, compondo uma aplicação 
 
 ```bash
 
-#Clonar o repositório
+#Abra o terminal na pasta onde quer clonar o repositório e dê o comando
 $ git clone https://github.com/roniets/desafio_elofy
 
-#Entrar no diretório
+#Em seguida para entrar no diretório execute o comando
 $ cd desafio_elofy/desafio_elofy
 
-#Instalar as dependências
+#Para instalar as dependências necessárias para executar a aplicação execute
 $ npm install
 
-#Iniciar a aplicação
+#E para iniciar a aplicação dê o comando
 $ npm start
 
 ```
