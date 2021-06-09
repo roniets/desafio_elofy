@@ -42,7 +42,7 @@ Projeto de desafio para dev front end junior da Elofy, compondo uma aplicação 
 $ git clone https://github.com/roniets/desafio_elofy
 
 #Entrar no diretório
-$ cd desafio_elofy
+$ cd desafio_elofy/desafio_elofy
 
 #Instalar as dependências
 $ npm install
