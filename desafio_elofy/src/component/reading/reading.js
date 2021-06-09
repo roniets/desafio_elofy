@@ -10,7 +10,10 @@ const parseCSV = (text) => {
     const [header, ...content] = text.split('\n')
 
     result.header = header.split(';')
+    result.header[0] = result.header[0].replace('Identificador', 'id')
+    result.header[1] = result.header[1].replace('_', ' de ')
     result.header.pop()
+    
 
     content.filter(item => item).forEach((item) => {
         result.data.push(item.split(';'))
@@ -19,6 +22,11 @@ const parseCSV = (text) => {
     result.data.forEach((item) => {
         item.pop()
         item[2] = item[2].replace(',', '.')
+        item[4] = item[4].replace(',', '.')
+        item[3] = item[3].replace('0', 'não')
+        item[3] = item[3].replace('1', 'sim')
+        item[5] = item[5].replace('0', 'não')
+        item[5] = item[5].replace('1', 'sim')
     })
     
     return result
@@ -79,13 +87,13 @@ export default function Reading() {
     
             if(filtersActive.includes('intolerante')){
                 result = result.filter(value => {
-                    return parseInt(value["3"]) === 1
+                    return value["3"] === 'sim'
                 })
             }
     
             if(filtersActive.includes('atleta')){
                 result = result.filter(value => {
-                    return parseInt(value["5"]) === 1
+                    return value["5"] === 'sim'
                 })
             }
         })

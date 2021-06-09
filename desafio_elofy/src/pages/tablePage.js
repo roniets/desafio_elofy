@@ -4,8 +4,10 @@ import Reading from '../component/reading/reading'
 const TablePage = () => {
 
     return (
-        <div className="container-table">
-            <Reading />
+        <div className="container-general">
+            <div className="container-table">
+                <Reading />
+            </div>
         </div>
     )
 

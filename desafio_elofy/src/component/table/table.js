@@ -8,6 +8,8 @@ function Random(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+
+
 const TableGrid = ({ csv }) => {
     
     if (!csv) {
@@ -17,8 +19,8 @@ const TableGrid = ({ csv }) => {
     return (
 
         <div>
-            <Table responsive striped bordered hover>
-                <thead>
+            <Table responsive striped hover className="table-borderless">
+                <thead className="text-muted">
                     <tr>
                         {csv.header.map((headerItem) => (
                             <th key={headerItem}>{headerItem}</th>
