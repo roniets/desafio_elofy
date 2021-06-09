@@ -66,4 +66,5 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 ## Autor
 
 Desenvolvido por Ronie Travassos Silva 🚀
+<br>
 [![Linkedin Badge](https://img.shields.io/badge/-Ronie-1E90FF?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ronie-travassos-silva-48769b61/)](https://www.linkedin.com/in/ronie-travassos-silva-48769b61/) 
